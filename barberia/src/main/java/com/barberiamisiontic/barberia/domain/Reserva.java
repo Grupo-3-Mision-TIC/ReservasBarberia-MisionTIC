@@ -2,7 +2,7 @@ package com.barberiamisiontic.barberia.domain;
 
 import java.sql.Date;
 
-public class Reservas {
+public class Reserva {
 
     private int id_reserva;
     private int id_empleado;

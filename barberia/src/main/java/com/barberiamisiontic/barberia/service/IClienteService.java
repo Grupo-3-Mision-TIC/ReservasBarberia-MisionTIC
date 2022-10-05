@@ -12,7 +12,7 @@ public interface IClienteService {
 
     Cliente getClienteById(long id);
 
-    Cliente updateCourse(Cliente cliente);
+    Cliente updateCliente(Cliente cliente);
 
     void deleteCliente(long id);
 }

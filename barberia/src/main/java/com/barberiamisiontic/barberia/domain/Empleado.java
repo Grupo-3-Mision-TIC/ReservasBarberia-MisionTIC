@@ -1,6 +1,16 @@
 package com.barberiamisiontic.barberia.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+
+@Entity
 public class Empleado {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
 
     private int id_empleado;
     private String nombre_apellidos;
@@ -31,7 +41,7 @@ public class Empleado {
         this.especialidad = especialidad;
     }
 
-    public boolean isEstado() {
+    public boolean getEstado() {
         return estado;
     }
 

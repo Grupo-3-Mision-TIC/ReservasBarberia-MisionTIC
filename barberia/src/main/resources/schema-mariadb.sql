@@ -41,7 +41,7 @@ VALUES(
 VALUES(
     'Melisa Rio',
     'Estilista',
-   '1' 
+    '1' 
 ),
 
 VALUES(

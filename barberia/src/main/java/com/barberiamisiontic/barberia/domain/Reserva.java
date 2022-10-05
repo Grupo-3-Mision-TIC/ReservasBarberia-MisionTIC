@@ -2,7 +2,16 @@ package com.barberiamisiontic.barberia.domain;
 
 import java.sql.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+@Entity
 public class Reserva {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
 
     private int id_reserva;
     private int id_empleado;
@@ -51,7 +60,7 @@ public class Reserva {
         this.valor = valor;
     }
 
-    public boolean isEstado() {
+    public boolean getEstado() {
         return estado;
     }
 
